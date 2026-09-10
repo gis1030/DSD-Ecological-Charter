@@ -1,250 +1,120 @@
-/* BEGIN base html*/
-html {
-  font-size: 10px;
-  height: 100%;
+:root {
+  /* Variables para un mantenimiento más fácil */
+  --primary-color: #00537e;
+  --secondary-color: #f0f8ff;
+  /* Un azul claro para el fondo */
+  --text-color: #333;
 }
 
 body {
   font-family: "Calibri", sans-serif;
-  margin: 0px;
-  color: #070707;
- 
-  min-height: 100%;
-  margin: 4px;
-  padding: 4px;
-  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
 }
 
-/*root*/
-.disclaimer {
-  margin-top: 30px;
-  font-size: 1rem;
-  max-width: 35em;
-}
-
-.root {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.logo2 {
-  background: url(images/schaerbeek1030_logo.png) no-repeat center;
-  background-size: contain;
+.logo-container img {
   width: 250px;
-  height: 250px;
+  /* O el tamaño que prefieras, por ejemplo, 100px o 200px */
+  height: auto;
+  /* Mantiene la proporción original de la imagen */
+  display: block;
+  /* Para centrarlo correctamente */
+  margin: 0 auto 1rem auto;
+  /* Centra la imagen y añade un margen inferior */
 }
-.logo3 {
-  background: url(images/schaerbeek1030_logo.png) no-repeat center;
-  background-size: contain;
-  width: 100px;
-  height: 40px;
-  text-align: center
+
+.page-header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fff;
 }
-.root * {
+
+.page-header h1 {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.introduction {
+  font-size: 1.25rem;
+  font-weight: demi bold;
+  max-width: 700px;
+  margin: 0 auto;
   text-align: center;
 }
 
-.root .link-wrapper {
-  padding-top: 2em;
+.main-content {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin: 0.2rem;
+.link-section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
 }
 
-h2 {
-  font-size: 1.75rem;
-  margin: 0.5rem;
+.link-section h2 {
+  font-size: 2.0rem;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 1rem;
 }
 
-h3 {
-  color: #00537e;
-  font-size: 2.15rem;
-  margin: 0;
-}
-
-h4 {
-  color: #00537e;
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 0;
-}
-
-.disclaimer {
-  margin-top: 10px;
-  font-size: 2.25rem;
-  font-weight: semi-bold;
-  max-width: 30em;
-}
-
-.data-infos1 {
-  width: 40%;
-  /*height: 100%; */
-  font-size: 1.75rem;
-  margin-bottom: 0;
-  margin: 0;
-}
-
-.data-infos2 {
-  width: 40%;
-  /*height: 100%; */
+.link-section h3 {
   font-size: 1.5rem;
-  margin-bottom: 0;
-  margin: 0;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 1rem;
 }
 
-h1 {
-  align-items: center;
+.link-list {
+  list-style-type: none;
   padding: 0;
-  padding-bottom: 0.5rem;
-  font-size: 2rem;
-  text-transform: initial;
-  font-weight: bold;
-  color: #00537e;
-  line-height: 0.9;
-  border-bottom: 1px solid #00537e;
-  display: flex;
-  align-items: flex-start;
-  gap: 0.5rem;
-}
-h1 .logo {
-  background: url(images/schaerbeek1030_logo.png) no-repeat center;
-  background-size: contain;
-  background-position: left;
-  width: 4rem;
-  height: 2rem;
-  flex-shrink: 0;
 }
 
-.sidebar {
-  position: absolute;
-  right: 1%;
-  left: 5%;
-  top: 2%;
-  width: 92%;
-  background-color: white;
-  padding: 0.25rem;
-  border-radius: 0.5rem;
-  outline: 1px solid #00537e;
-  /*overflow-y: auto;
-  overflow-x: auto;
-  scrollbar-width: thin;
-  scrollbar-color: #cccccc white;*/
-  /* width */
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
+.link-list li {
+  margin-bottom: 1rem;
 }
 
-.sidebar::-webkit-scrollbar {
-  width: 7.5px;
-  height: 7.5px;
-}
-.sidebar::-webkit-scrollbar-track {
-  background-color: #fcfcfc;
-  /* IE9, iOS 3.2+ */
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjAlIj48c3RvcCBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjQ5Ii8+PHN0b3Agc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAuNSIvPjxzdG9wIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjUxIi8+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
-  background-image: -webkit-gradient(linear, 0% 0%, 100% 0%, color-stop(0, #ffffff), color-stop(0.49, #ffffff), color-stop(0.5, #000000), color-stop(0.51, #ffffff), color-stop(1, #ffffff));
-  /* Android 2.3 */
-  background-image: -webkit-repeating-linear-gradient(left, #ffffff 0%, #ffffff 49%, #000000 50%, #ffffff 51%, #ffffff 100%);
-  /* IE10+ */
-  background-image: repeating-linear-gradient(to right, #ffffff 0%, #ffffff 49%, #000000 50%, #ffffff 51%, #ffffff 100%);
-  background-image: -ms-repeating-linear-gradient(left, #ffffff 0%, #ffffff 49%, #000000 50%, #ffffff 51%, #ffffff 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffffff", endColorstr="#ffffffff", GradientType=1);
-}
-.sidebar::-webkit-scrollbar-thumb {
-  background: #cccccc;
-  width: 7.5px;
-}
-.sidebar::-webkit-scrollbar-thumb:hover {
-  background: #cccccc;
-}
-.sidebar .actions {
-  border-top: 1px solid #cccccc;
-  padding-top: 0.5rem;
-  display: flex;
-  align-items: center;
-}
-.sidebar .actions button {
-  margin-left: auto;
+.link-list a {
+  display: block;
+  /* Para que el área del enlace sea mayor */
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--text-color);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.mobile-header {
-  display: none;
+.link-list a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
-.credits {
-  position: absolute;
-  bottom: 1%;
-  right: 0;
+.link-title {
+  display: block;
   font-size: 1.25rem;
-  color: #919191;
-  mix-blend-mode: multiply;
-}
-.credits p {
-  margin: 0;
-}
-.credits a {
-  font-weight: initial;
+  font-weight: bold;
+  color: var(--primary-color);
 }
 
-div#Region00 {
-    position: absolute;
-    /* position: relative; */
-    top: 0%;
-    /* height: 80%; */
-    width: 99%;
-    height: 100%;
-    background-color: transparent;
-    opacity: 1;
-    border: 1% solid transparent;
-    /* margin: 0em 0em 0em 0em; */
-    /* padding: 0.1em; */
-    align-items: center;
-    box-sizing: border-box;
-    display: flex;
-    align-content: right;
+.link-description {
+  display: block;
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 0.5rem;
 }
 
-div#Region04 {
-    /* position: fixed; */
-    position: relative;
-    /* position: absolute; */
-    width: 80%;
-    height: 98%;
-    border: 1% solid transparent;
-    /* margin: 0% 0% 0% 36%; */
-    background-color: rgb(224, 216, 247);
-    box-sizing: border-box;
-    display: flex;
-    top: 0.5%;
-	bottom: 0.5%;
-    left: 0.3%;
-	right: 0.5%;
-	align-content: right;
-    align-items: center;
-	float: right;
+.page-footer {
+  text-align: center;
+  margin-top: 4rem;
+  color: #888;
 }
-
-div#Region01 {
-    /* FONT-WEIGHT: 10; */
-    position: fixed;
-    /* position: relative; */
-    width: 20%;
-    height: 98%;
-    border: 0.0em solid transparent;
-    margin: 0 0 0 79.5%;
-    padding: 0.1em;
-    top: 0.5%;
-    background-color: rgb(255, 255, 255);
-    box-sizing: border-box;
-    display: flex;
-    align-content: center;
-    align-items: center;
-	overflow-y: scroll;
-	scrollbar-width: thin;
-}
-/* END base html*/
