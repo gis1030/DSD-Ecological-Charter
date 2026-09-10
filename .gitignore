@@ -1,0 +1,6 @@
+# Continuity/session notes — local use only, not published
+DSD_EcoChart.md
+
+# Raw geojson source files — kept locally as backup before conversion
+# to the .js wrapper format actually used by the HTML pages
+**/data/**/geojson/
