@@ -8,12 +8,12 @@
 
 | Carte | Description | Lien |
 |---|---|---|
-| 🏠 **Page d'accueil** | Portail du hub, 8 cartes regroupées par thème | [index.html](index.html) |
+| 🏠 **Page d'accueil** | Portail du hub, 8 cartes regroupées par thème | [index.html](https://gis1030.github.io/DSD-Ecological-Charter/) |
 | 👥 **Distribution de la population** | Population par zone géographique (Registre national) | [carte](Ecological-Charter-1030/PopulationDistribution1030.html) |
 | 🏘️ **Nombre de ménages** | Ménages par zone géographique (Registre national) | [carte](Ecological-Charter-1030/HouseholdsNumbers1030.html) |
 | 💶 **Primes DSD** | Primes vélo, façade vert, compostière | [carte](Ecological-Charter-1030/PrimesDSD1030.html) |
 | 🏛️ **Cadastre des bâtiments** | Bâtiments, parcelles et adresses (URBIS) | [carte](Ecological-Charter-1030/BuildingCadastreAddresses1030.html) |
-| 🌳 **Maillage Vert 1030** | Arbres, espaces verts, diagnostic environnemental | [carte](Ecological-Charter-1030/BXLEnvironment1030.html) |
+| 🌳 **Maillage Vert 1030** | Arbres, espaces verts, diagnostic environnemental | [carte](https://gis1030.github.io/DSD-Ecological-Charter/Ecological-Charter-1030/BXLEnvironment1030.html) |
 | 🚶 **Trottoirs — végétalisation des façades** | Potentiel de végétalisation verticale des façades | [carte](Ecological-Charter-1030/SidewalksBuildingAddresses1030.html) |
 | 🛣️ **Street-Surfaces-Nodes 1030** | Réseau viaire (référentiel URBIS-OSIRIS) et trottoirs par type de voirie | [carte](Ecological-Charter-1030/StreetSurfacesNodes1030.html) |
 
